@@ -10,7 +10,8 @@ const mostOccLetters = (lettersList) => {
       times: letters[letter],
     }))
     .sort((a, b) => b.times - a.times)
-    .slice(0, 3);
+    .slice(0, 3)
+    .map((letter) => letter.name);
 };
 
 console.log(
