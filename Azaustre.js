@@ -41,3 +41,38 @@ console.log(
     "J",
   ])
 );
+
+////////////////
+
+const zipzap = (arr) => {
+  return arr.map((num) =>
+    num % 3 === 0
+      ? "fizz"
+      : num % 5 === 0
+      ? "buzz"
+      : num % 3 && num % 5 === 0
+      ? "fizzbuzz"
+      : ""
+  );
+};
+
+console.log(zipzap([1, 3, 5, 6, 7, 8, 9, 10, 13, 15, 19, 21]));
+
+///////
+const fizzbuzz = (num) => {
+  return num % 3 === 0 && num % 5 === 0
+    ? "fizzbuzz"
+    : num % 3 === 0
+    ? "fizz"
+    : num % 5 === 0
+    ? "buzz"
+    : num;
+};
+
+const print = (num) => {
+  for (let i = 1; i <= num; i++) {
+    console.log(`${i} : ${fizzbuzz(i)}`);
+  }
+};
+
+print(16);
