@@ -4,10 +4,9 @@ import { gameOptions } from "../gameOptions";
 const PlayerButton = ({
   setIsPlayerOneTurn,
   isPlayerOneTurn,
-  playerOne,
   setPlayerOne,
-  playerTwo,
   setPlayerTwo,
+  playerTwo,
 }) => {
   const playerButtonhandler = () => {
     const play = Math.floor(Math.random() * gameOptions.length);
@@ -17,8 +16,8 @@ const PlayerButton = ({
       ? setPlayerOne(selectedOption.id)
       : setPlayerTwo(selectedOption.id);
 
-    console.log("playerOne", playerOne);
-    console.log("playerTwo", playerTwo);
+    console.log("selectedOption.id", selectedOption.id);
+    console.log("playerTwo after setPlayerTwo", playerTwo);
 
     setIsPlayerOneTurn(!isPlayerOneTurn);
   };

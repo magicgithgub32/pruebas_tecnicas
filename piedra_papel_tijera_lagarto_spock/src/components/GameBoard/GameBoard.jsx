@@ -38,10 +38,9 @@ const GameBoard = ({
         <PlayerButton
           setIsPlayerOneTurn={setIsPlayerOneTurn}
           isPlayerOneTurn={isPlayerOneTurn}
-          playerOne={playerOne}
           setPlayerOne={setPlayerOne}
-          playerTwo={playerTwo}
           setPlayerTwo={setPlayerTwo}
+          playerTwo={playerTwo}
         />
         <p>{isPlayerOneTurn ? "PLAYER ONE PLAYS" : "PLAYER TWO PLAYS"}</p>
       </section>
