@@ -9,7 +9,7 @@ export const gameOptions = [
     id: 1,
     name: "Papel",
     image: "../panuelo-de-papel.png",
-    beats: [0],
+    beats: [0, 4],
   },
   {
     id: 2,
@@ -21,12 +21,12 @@ export const gameOptions = [
     id: 3,
     name: "Lagarto",
     image: "../lagartija.png",
-    beats: [1],
+    beats: [1, 4],
   },
   {
     id: 4,
     name: "Spock",
     image: "../vulcano.png",
-    beats: [3, 0],
+    beats: [2, 0],
   },
 ];

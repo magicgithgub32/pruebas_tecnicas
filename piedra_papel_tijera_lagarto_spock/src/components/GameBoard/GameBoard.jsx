@@ -42,6 +42,7 @@ const GameBoard = ({
           setPlayerTwo={setPlayerTwo}
           playerTwo={playerTwo}
         />
+
         <p>{isPlayerOneTurn ? "PLAYER ONE PLAYS" : "PLAYER TWO PLAYS"}</p>
       </section>
     </article>
